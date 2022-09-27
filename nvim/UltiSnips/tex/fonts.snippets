@@ -1,0 +1,10 @@
+# Font Snippets
+
+snippet "(^|[^a-zA-Z])tii" "\textit{} " rA
+`!p snip.rv = match.group(1)`\textit{${1:${VISUAL:}}}$0
+endsnippet
+
+snippet "(^|[^a-zA-Z])tbb" "\textbf{} " rA
+`!p snip.rv = match.group(1)`\textbf{${1:${VISUAL:}}}$0
+endsnippet
+

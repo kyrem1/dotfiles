@@ -1,0 +1,39 @@
+priority 10
+
+
+snippet "(^|[^a-zA-Z])mm" "Inline LaTeX math" rA
+`!p snip.rv = match.group(1)`\$ ${1:${VISUAL:}} \$$0
+endsnippet
+
+snippet dm "Display Math" bA
+\[
+	$0
+\]
+endsnippet
+
+snippet env "New environment" bA
+\begin{$1}
+	${0:${VISUAL:}}
+\end{$1}
+endsnippet
+
+snippet all "Align environment with suppressed numbering" bA
+\begin{align*}
+	$1
+\end{align*}
+$0
+endsnippet
+
+snippet pm "Parentheses matrix pmatrix" bA
+\begin{pmatrix}
+	$1
+\end{pmatrix}$0
+endsnippet
+
+snippet mq "\mqty() (matrix for inline math)" A
+\mqty(${1:${VISUAL:}})$0
+endsnippet
+
+
+
+

@@ -1,0 +1,118 @@
+// vim:ts=4:sw=4:et
+{
+    // Clock
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 427,
+       "width": 752,
+       "x": 114,
+       "y": 55
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "user_on",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "kyrem1@james-arch:~",
+            "percent": 1,
+            "swallows": [
+               {
+                    "instance": "clockHomeScreen"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // Main neofetch
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 552,
+       "width": 932,
+       "x": 26,
+       "y": 511
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "user_on",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "kyrem1@james-arch:~",
+            "percent": 1,
+            "swallows": [
+               {
+                    "instance": "neofetchHomeScreen"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // spotify-tui
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 1007,
+       "width": 932,
+       "x": 971,
+       "y": 57
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "user_on",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "kyrem1@james-arch:~",
+            "percent": 1,
+            "swallows": [
+               {
+                    "instance":"spotifyHomeScreen"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

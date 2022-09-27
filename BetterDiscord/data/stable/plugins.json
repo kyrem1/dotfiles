@@ -1,0 +1,12 @@
+{
+    "PluginRepo": false,
+    "TypingUsersAvatars": true,
+    "MemberCount": true,
+    "TypingIndicator": true,
+    "CallTimeCounter": true,
+    "ShowConnections": true,
+    "BetterRoleColors": false,
+    "ZeresPluginLibrary": true,
+    "BugReportHelper": true,
+    "BDFDB": true
+}

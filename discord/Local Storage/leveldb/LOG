@@ -1,0 +1,6 @@
+2022/09/25-00:39:02.460 d21b Reusing MANIFEST /home/kyrem1/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/09/25-00:39:02.461 d21b Recovering log #64
+2022/09/25-00:39:02.461 d21b Reusing old log /home/kyrem1/.config/discord/Local Storage/leveldb/000064.log 
+2022/09/25-00:41:03.136 d21c Level-0 table #69: started
+2022/09/25-00:41:03.146 d21c Level-0 table #69: 1124108 bytes OK
+2022/09/25-00:41:03.148 d21c Delete type=0 #64

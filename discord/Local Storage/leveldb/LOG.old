@@ -1,0 +1,18 @@
+2022/09/22-16:27:56.982 2dad Reusing MANIFEST /home/kyrem1/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/09/22-16:27:56.982 2dad Recovering log #59
+2022/09/22-16:27:56.982 2dad Reusing old log /home/kyrem1/.config/discord/Local Storage/leveldb/000059.log 
+2022/09/22-16:29:57.628 2dad Level-0 table #63: started
+2022/09/22-16:29:57.640 2dad Level-0 table #63: 1114159 bytes OK
+2022/09/22-16:29:57.643 2dad Delete type=0 #59
+2022/09/22-19:39:00.705 be93 Level-0 table #65: started
+2022/09/22-19:39:00.716 be93 Level-0 table #65: 14612 bytes OK
+2022/09/22-19:39:00.719 be93 Delete type=0 #62
+2022/09/22-19:39:00.719 be93 Compacting 4@0 + 1@1 files
+2022/09/22-19:39:00.731 be93 Generated table #66@0: 41 keys, 1126881 bytes
+2022/09/22-19:39:00.731 be93 Compacted 4@0 + 1@1 files => 1126881 bytes
+2022/09/22-19:39:00.733 be93 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/09/22-19:39:00.733 be93 Delete type=2 #65
+2022/09/22-19:39:00.733 be93 Delete type=2 #60
+2022/09/22-19:39:00.733 be93 Delete type=2 #57
+2022/09/22-19:39:00.733 be93 Delete type=2 #55
+2022/09/22-19:39:00.733 be93 Delete type=2 #63
