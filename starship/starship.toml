@@ -1,16 +1,11 @@
-#format = """
-#$username\
-#$hostname\
-#$directory\
-#$git_branch\
-#$git_state\
-#$git_status\
-#$git_metrics\
-#$fill\
-#$nodejs\
-#$cmd_duration $jobs \
-#$linebreak
-#$character"""
+format = """
+$directory\
+$git_branch\
+$git_state\
+$linebreak
+$character"""
+
+command_timeout = 500
 
 [fill]
 symbol = " "
@@ -29,7 +24,7 @@ vicmd_symbol = "[<](bold white)"
 [git_branch]
 symbol = " "
 format = "[$symbol$branch]($style) "
-style = "bright-black"
+style = "purple"
 
 [jobs]
 symbol = ""

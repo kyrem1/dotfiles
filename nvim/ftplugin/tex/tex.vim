@@ -1,7 +1,7 @@
 
 " Local colorscheme
 colorscheme nord
-
+set background=dark
 
 let maplocalleader = ','
 
@@ -17,8 +17,10 @@ let g:vimtex_view_method = 'zathura'
 " Open Viewer
 nmap <leader>v <plug>(vimtex-view)
 
-let g:tex_flavor = 'latex'  " recognize tex files as latex
+" no aligning & in align/aling* envs.
+let g:vimtex_indent_on_ampersands = 0
 
+let g:tex_flavor = 'latex'  " recognize tex files as latex
 " setting indentation
 " setlocal expandtab
 " setlocal autoindent

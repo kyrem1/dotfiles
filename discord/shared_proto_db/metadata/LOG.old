@@ -1,3 +1,3 @@
-2022/09/18-21:44:15.962 11217 Reusing MANIFEST /home/kyrem1/.config/discord/shared_proto_db/metadata/MANIFEST-000001
-2022/09/18-21:44:15.962 11217 Recovering log #3
-2022/09/18-21:44:15.962 11217 Reusing old log /home/kyrem1/.config/discord/shared_proto_db/metadata/000003.log 
+2022/12/21-15:42:02.031 8eb Reusing MANIFEST /home/kyrem1/.config/discord/shared_proto_db/metadata/MANIFEST-000001
+2022/12/21-15:42:02.031 8eb Recovering log #3
+2022/12/21-15:42:02.032 8eb Reusing old log /home/kyrem1/.config/discord/shared_proto_db/metadata/000003.log 

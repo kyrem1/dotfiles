@@ -1,6 +1,47 @@
-2022/09/25-00:39:02.460 d21b Reusing MANIFEST /home/kyrem1/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2022/09/25-00:39:02.461 d21b Recovering log #64
-2022/09/25-00:39:02.461 d21b Reusing old log /home/kyrem1/.config/discord/Local Storage/leveldb/000064.log 
-2022/09/25-00:41:03.136 d21c Level-0 table #69: started
-2022/09/25-00:41:03.146 d21c Level-0 table #69: 1124108 bytes OK
-2022/09/25-00:41:03.148 d21c Delete type=0 #64
+2022/12/31-12:14:19.950 1ffe Reusing MANIFEST /home/kyrem1/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/12/31-12:14:19.950 1ffe Recovering log #271
+2022/12/31-12:14:19.955 1ffe Level-0 table #275: started
+2022/12/31-12:14:19.966 1ffe Level-0 table #275: 1293850 bytes OK
+2022/12/31-12:14:19.970 1ffe Delete type=0 #271
+2022/12/31-12:18:32.478 200d Level-0 table #278: started
+2022/12/31-12:18:32.515 200d Level-0 table #278: 1291402 bytes OK
+2022/12/31-12:18:32.518 200d Delete type=0 #276
+2022/12/31-15:15:48.988 8761 Level-0 table #280: started
+2022/12/31-15:15:48.991 8761 Level-0 table #280: 19157 bytes OK
+2022/12/31-15:15:48.993 8761 Delete type=0 #277
+2022/12/31-17:23:29.758 8761 Level-0 table #282: started
+2022/12/31-17:23:29.772 8761 Level-0 table #282: 1299327 bytes OK
+2022/12/31-17:23:29.775 8761 Delete type=0 #279
+2022/12/31-17:23:29.775 8761 Compacting 4@0 + 1@1 files
+2022/12/31-17:23:29.791 8761 Generated table #283@0: 157 keys, 1843110 bytes
+2022/12/31-17:23:29.791 8761 Compacted 4@0 + 1@1 files => 1843110 bytes
+2022/12/31-17:23:29.793 8761 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/31-17:23:29.794 8761 Delete type=2 #282
+2022/12/31-17:23:29.794 8761 Delete type=2 #275
+2022/12/31-17:23:29.794 8761 Delete type=2 #278
+2022/12/31-17:23:29.794 8761 Delete type=2 #273
+2022/12/31-17:23:29.794 8761 Delete type=2 #280
+2022/12/31-23:20:07.400 1301e Level-0 table #285: started
+2022/12/31-23:20:07.402 1301e Level-0 table #285: 15242 bytes OK
+2022/12/31-23:20:07.404 1301e Delete type=0 #281
+2023/01/01-07:13:46.420 1301e Level-0 table #287: started
+2023/01/01-07:13:46.431 1301e Level-0 table #287: 14241 bytes OK
+2023/01/01-07:13:46.433 1301e Delete type=0 #284
+2023/01/01-13:28:37.470 15ca9 Level-0 table #289: started
+2023/01/01-13:28:37.482 15ca9 Level-0 table #289: 1291185 bytes OK
+2023/01/01-13:28:37.485 15ca9 Delete type=0 #286
+2023/01/01-17:30:40.262 1e64d Level-0 table #291: started
+2023/01/01-17:30:40.296 1e64d Level-0 table #291: 1305433 bytes OK
+2023/01/01-17:30:40.300 1e64d Delete type=0 #288
+2023/01/01-17:30:40.301 1e64d Compacting 4@0 + 1@1 files
+2023/01/01-17:30:40.330 1e64d Generated table #292@0: 157 keys, 1845088 bytes
+2023/01/01-17:30:40.330 1e64d Compacted 4@0 + 1@1 files => 1845088 bytes
+2023/01/01-17:30:40.332 1e64d compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/01/01-17:30:40.332 1e64d Delete type=2 #283
+2023/01/01-17:30:40.332 1e64d Delete type=2 #291
+2023/01/01-17:30:40.332 1e64d Delete type=2 #287
+2023/01/01-17:30:40.332 1e64d Delete type=2 #289
+2023/01/01-17:30:40.332 1e64d Delete type=2 #285
+2023/01/01-20:57:47.312 24d76 Level-0 table #294: started
+2023/01/01-20:57:47.317 24d76 Level-0 table #294: 14957 bytes OK
+2023/01/01-20:57:47.320 24d76 Delete type=0 #290

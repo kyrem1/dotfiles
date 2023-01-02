@@ -1,18 +1,18 @@
-2022/09/22-16:27:56.982 2dad Reusing MANIFEST /home/kyrem1/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2022/09/22-16:27:56.982 2dad Recovering log #59
-2022/09/22-16:27:56.982 2dad Reusing old log /home/kyrem1/.config/discord/Local Storage/leveldb/000059.log 
-2022/09/22-16:29:57.628 2dad Level-0 table #63: started
-2022/09/22-16:29:57.640 2dad Level-0 table #63: 1114159 bytes OK
-2022/09/22-16:29:57.643 2dad Delete type=0 #59
-2022/09/22-19:39:00.705 be93 Level-0 table #65: started
-2022/09/22-19:39:00.716 be93 Level-0 table #65: 14612 bytes OK
-2022/09/22-19:39:00.719 be93 Delete type=0 #62
-2022/09/22-19:39:00.719 be93 Compacting 4@0 + 1@1 files
-2022/09/22-19:39:00.731 be93 Generated table #66@0: 41 keys, 1126881 bytes
-2022/09/22-19:39:00.731 be93 Compacted 4@0 + 1@1 files => 1126881 bytes
-2022/09/22-19:39:00.733 be93 compacted to: files[ 0 1 1 0 0 0 0 ]
-2022/09/22-19:39:00.733 be93 Delete type=2 #65
-2022/09/22-19:39:00.733 be93 Delete type=2 #60
-2022/09/22-19:39:00.733 be93 Delete type=2 #57
-2022/09/22-19:39:00.733 be93 Delete type=2 #55
-2022/09/22-19:39:00.733 be93 Delete type=2 #63
+2022/12/30-15:11:29.874 603b Reusing MANIFEST /home/kyrem1/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/12/30-15:11:29.874 603b Recovering log #266
+2022/12/30-15:11:29.877 603b Reusing old log /home/kyrem1/.config/discord/Local Storage/leveldb/000266.log 
+2022/12/30-15:12:30.600 603c Level-0 table #270: started
+2022/12/30-15:12:30.603 603c Level-0 table #270: 26052 bytes OK
+2022/12/30-15:12:30.605 603c Delete type=0 #266
+2022/12/30-15:13:30.598 603c Level-0 table #272: started
+2022/12/30-15:13:30.629 603c Level-0 table #272: 1290757 bytes OK
+2022/12/30-15:13:30.632 603c Delete type=0 #269
+2022/12/30-15:13:30.633 603c Compacting 4@0 + 1@1 files
+2022/12/30-15:13:30.652 603c Generated table #273@0: 157 keys, 1840949 bytes
+2022/12/30-15:13:30.652 603c Compacted 4@0 + 1@1 files => 1840949 bytes
+2022/12/30-15:13:30.655 603c compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/30-15:13:30.655 603c Delete type=2 #261
+2022/12/30-15:13:30.655 603c Delete type=2 #270
+2022/12/30-15:13:30.655 603c Delete type=2 #263
+2022/12/30-15:13:30.655 603c Delete type=2 #272
+2022/12/30-15:13:30.655 603c Delete type=2 #267

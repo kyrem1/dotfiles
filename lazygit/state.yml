@@ -1,7 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/kyrem1/Mathematics/mathematicsFall2022
+- /home/kyrem1/Development/jamesharbour.xyz
 - /home/kyrem1/Documents/james2022cv
+- /home/kyrem1/Mathematics/mathematicsFall2022
 startuppopupversion: 5
-customcommandshistory: []
+customcommandshistory:
+- q
 hidecommandlog: false

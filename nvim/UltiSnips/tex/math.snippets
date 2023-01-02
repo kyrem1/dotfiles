@@ -115,11 +115,11 @@ snippet "([\W_])wt" "\widetilde" rA
 endsnippet
 
 snippet "([\W_\\])hh" "\hat" rA
-`!p snip.rv = match.group(1)`\hat{${1:${VISUAL:}}}$0
+`!p snip.rv = match.group(1)`\widehat{${1:${VISUAL:}}}$0
 endsnippet
 
 snippet "([\W_\\])bb" "\bar" rA
-`!p snip.rv = match.group(1)`\bar{${1:${VISUAL:}}}$0
+`!p snip.rv = match.group(1)`\cls{${1:${VISUAL:}}}$0
 endsnippet
 
 snippet "([\W_])tn" "\tensor{}" rA
@@ -129,6 +129,17 @@ endsnippet
 context "math()"
 snippet "([^a-zA-Z\\])nrr" "Norm" rA
 `!p snip.rv = match.group(1)`\norm{${1:${VISUAL:}}}$0
+endsnippet
+
+
+snippet "([^a-zA-Z\\])ipp" "Inner product" rA
+`!p snip.rv = match.group(1)`\inp{${1:${VISUAL:}}}{$2}$0
+endsnippet
+
+
+context "math()"
+snippet "([^a-zA-Z\\])sq" "\sqrt (square root)" rA
+`!p snip.rv = match.group(1)`\sqrt{${1:${VISUAL:}}}$0
 endsnippet
 
 # ----------------------------------------- #

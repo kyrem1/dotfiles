@@ -18,7 +18,7 @@ floating_modifier $mod
 
 # Terminal
 set $TERMINAL alacritty
-bindsym $mod+Return exec alacritty -o font.size=8
+bindsym $mod+Return exec --no-startup-id alacritty -o font.size=8
 
 
 # Window kill command
@@ -31,16 +31,26 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 exec_always --no-startup-id picom &
 
 # Ranger
-bindsym $mod+t exec alacritty -o font.size=10 -e 'ranger'
+bindsym $mod+t exec alacritty -o font.size=8 -e 'ranger'
 bindsym $mod+Shift+t exec /home/kyrem1/Applications/todofi.sh
 
 # ncmpcpp
 bindsym $mod+m exec alacritty -e 'ncmpcpp'
 
+# flameshot (screenshots)
+# bindsym Print       exec flameshot full
+# bindsym Shift+Print exec flameshot gui
+
+
+#interactive screenshot by pressing printscreen
+bindsym --release Print exec gnome-screenshot -i 
+#crop-area screenshot by pressing Mod + printscreen
+bindsym --release $mod+Print exec gnome-screenshot -a
+
 ###### Startup execs ######
 exec --no-startup-id spotifyd
-exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/kyrem1/.config/i3/layouts/homeScreen.json; exec alacritty --class spotifyHomeScreen -o font.size=8 -e spt; exec alacritty --class neofetchHomeScreen -o font.size=8 -e neofetch; exec alacritty --class clockHomeScreen -o font.size=8 -e peaclock'"
-
+exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/kyrem1/.config/i3/layouts/homeScreen.json; exec alacritty --class spotifyHomeScreen -o font.size=8 -e ncmpcpp; exec alacritty --class neofetchHomeScreen -o font.size=8 -e neofetch; exec alacritty --class clockHomeScreen -o font.size=8 -e peaclock'"
+exec_always --no-startup-id unclutter &
 
 ###########################
 
@@ -304,3 +314,7 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 # touchpad on and off controller on laptop with Fn+<touchpad control functional key>
 bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
 bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
+
+# control keyboard backlight levels
+bindsym $mod+plus exec brightnessctl --device='tpacpi::kbd_backlight' set +1
+bindsym $mod+Shift+plus exec brightnessctl --device='tpacpi::kbd_backlight' set 1-
