@@ -1,0 +1,12 @@
+{
+  "requirements_checker": {
+    "inkscape_executable": "/usr/bin/inkscape",
+    "available_tex_to_pdf_converters": {
+      "pdflatex": "/usr/bin/pdflatex",
+      "lualatex": "/usr/bin/lualatex",
+      "xelatex": "/usr/bin/xelatex"
+    },
+    "available_pdf_to_svg_converters": {}
+  },
+  "previous_exit_code": 0
+}

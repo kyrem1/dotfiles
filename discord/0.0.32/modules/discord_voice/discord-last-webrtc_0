@@ -1,0 +1,283 @@
+[2023-10-17 18:40:30.471] [93175] (engine.cpp:302): Created native Engine, time: Tue Oct 17 18:40:30 2023 EDT, logPath: /home/kyrem1/.config/discord/0.0.32/modules/discord_voice/, logLevel: 2
+[2023-10-17 18:40:30.472] [93175] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-10-17 18:40:30.472] [93175] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2023-10-17 18:40:30.472] [93175] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-10-17 18:40:30.473] [93175] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2023-10-17 18:40:30.473] [93175] (audio_device_impl.cc:143): current platform is Linux
+[2023-10-17 18:40:30.473] [93175] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2023-10-17 18:40:30.473] [93175] (audio_device_impl.cc:991): PlatformAudioLayer
+[2023-10-17 18:40:30.473] [93175] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2023-10-17 18:40:30.473] [93175] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2023-10-17 18:40:30.473] [93175] (audio_device_impl.cc:344): AttachAudioBuffer
+[2023-10-17 18:40:30.473] [93175] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2023-10-17 18:40:30.473] [93175] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2023-10-17 18:40:30.473] [93175] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2023-10-17 18:40:30.473] [93175] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2023-10-17 18:40:30.473] [93175] (audio_device_impl.cc:354): ActiveAudioLayer
+[2023-10-17 18:40:30.497] [93175] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2023-10-17 18:40:30.497] [93175] (audio_device_impl.cc:143): current platform is Linux
+[2023-10-17 18:40:30.497] [93175] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2023-10-17 18:40:30.497] [93175] (audio_device_impl.cc:991): PlatformAudioLayer
+[2023-10-17 18:40:30.497] [93175] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2023-10-17 18:40:30.497] [93175] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2023-10-17 18:40:30.497] [93175] (audio_device_impl.cc:344): AttachAudioBuffer
+[2023-10-17 18:40:30.497] [93175] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2023-10-17 18:40:30.497] [93175] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2023-10-17 18:40:30.497] [93175] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2023-10-17 18:40:30.497] [93175] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2023-10-17 18:40:30.497] [93175] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-10-17 18:40:30.497] [93175] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2023-10-17 18:40:30.497] [93175] (audio_engine.cpp:528): Creating audio engine: standard
+[2023-10-17 18:40:30.497] [93175] (audio_device_impl.cc:364): Init
+[2023-10-17 18:40:30.503] [93175] (audio_device_impl.cc:364): Init
+[2023-10-17 18:40:30.505] [93175] (audio_coding.cpp:149): Using software Opus decoder
+[2023-10-17 18:40:30.505] [93175] (audio_coding.cpp:166): Using software Opus encoder
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:895): RegisterAudioCallback
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2023-10-17 18:40:30.505] [93175] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:895): RegisterAudioCallback
+[2023-10-17 18:40:30.505] [93175] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-10-17 18:40:30.505] [93175] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:573): output: 0
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-10-17 18:40:30.505] [93175] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-10-17 18:40:30.505] [93175] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-10-17 18:40:30.505] [93175] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-17 18:40:30.505] [93175] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-10-17 18:40:30.505] [93175] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-10-17 18:40:30.506] [93175] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-10-17 18:40:30.506] [93175] (audio_device_impl.cc:619): output: 1
+[2023-10-17 18:40:30.506] [93175] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-10-17 18:40:30.506] [93175] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-10-17 18:40:30.506] [93175] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2023-10-17 18:40:30.506] [93175] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2023-10-17 18:40:30.506] [93175] (audio_device_impl.cc:914): output: 0
+[2023-10-17 18:40:30.506] [93175] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-10-17 18:40:30.506] [93175] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2023-10-17 18:40:30.506] [93175] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2023-10-17 18:40:30.506] [93175] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-10-17 18:40:30.506] [93175] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[2023-10-17 18:40:30.506] [93175] (agc_manager_direct.cc:500): [agc] analog controller enabled: yes
+[2023-10-17 18:40:30.506] [93175] (agc_manager_direct.cc:503): [agc] Min mic level: 12 (overridden: no)
+[2023-10-17 18:40:30.506] [93175] (agc_manager_direct.cc:507): [agc] Startup min volume: 0
+[2023-10-17 18:40:30.506] [93175] (captured_audio_processor.cpp:115): SetNoiseCancellation: 0
+[2023-10-17 18:40:30.506] [93175] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-10-17 18:40:30.506] [93175] (field_trial.cc:141): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:183): *** OnDevicesChanged:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:184): * audioInput:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:189): * audioOutput:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:183): *** OnDevicesChanged:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:184): * audioInput:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:187): - default: Comet Lake PCH-LP cAVS Digital Microphone ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:187): - Comet Lake PCH-LP cAVS Headphones Stereo Microphone ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:187): - Comet Lake PCH-LP cAVS Digital Microphone ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:189): * audioOutput:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:183): *** OnDevicesChanged:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:184): * audioInput:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:187): - default: Comet Lake PCH-LP cAVS Digital Microphone ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:187): - Comet Lake PCH-LP cAVS Headphones Stereo Microphone ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:187): - Comet Lake PCH-LP cAVS Digital Microphone ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:189): * audioOutput:
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:192): - default: Comet Lake PCH-LP cAVS Speaker + Headphones ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:192): - Comet Lake PCH-LP cAVS HDMI / DisplayPort 3 Output ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:192): - Comet Lake PCH-LP cAVS HDMI / DisplayPort 2 Output ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:192): - Comet Lake PCH-LP cAVS HDMI / DisplayPort 1 Output ()
+[2023-10-17 18:40:30.507] [93175] (engine.cpp:192): - Comet Lake PCH-LP cAVS Speaker + Headphones ()
+[2023-10-17 18:40:30.572] [93147] (discord.cpp:744): JS console: ["%c[DatabaseManager]","active user changed (now: 238805386658971660, was: null, was: undefined)"]
+[2023-10-17 18:40:30.580] [93175] (audio_engine.cpp:189): Setting audio input device: 'Comet Lake PCH-LP cAVS Digital Microphone'
+[2023-10-17 18:40:30.580] [93175] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-10-17 18:40:30.580] [93175] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-10-17 18:40:30.580] [93175] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-10-17 18:40:30.580] [93175] (audio_device_impl.cc:788): SetRecordingDevice
+[2023-10-17 18:40:30.580] [93175] (audio_device_generic.cc:67): SetRecordingDevice: Not supported on this platform
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:776): SetRecordingDevice(2)
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:573): output: 0
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-10-17 18:40:30.581] [93175] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-10-17 18:40:30.581] [93175] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-10-17 18:40:30.581] [93175] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-17 18:40:30.581] [93175] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:619): output: 1
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-10-17 18:40:30.581] [93175] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-10-17 18:40:30.581] [93175] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-10-17 18:40:30.581] [93175] (audio_device_impl.cc:547): SetMicrophoneVolume(109)
+[2023-10-17 18:40:30.581] [93175] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-17 18:40:30.587] [93147] (discord.cpp:744): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 237546, Version Hash: c8efe13f4537780a42bc79a2dc07905f426bab90"]
+[2023-10-17 18:40:30.758] [93147] (discord.cpp:744): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2023-10-17 18:40:30.826] [93147] (discord.cpp:744): JS console: ["%c[default]","[NATIVE INFO] host 0.0.32, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, build: null"]
+[2023-10-17 18:40:30.850] [93175] (audio_engine.cpp:189): Setting audio input device: 'Comet Lake PCH-LP cAVS Digital Microphone'
+[2023-10-17 18:40:30.850] [93175] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-10-17 18:40:30.850] [93175] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-10-17 18:40:30.850] [93175] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-10-17 18:40:30.850] [93175] (audio_device_impl.cc:788): SetRecordingDevice
+[2023-10-17 18:40:30.850] [93175] (audio_device_generic.cc:67): SetRecordingDevice: Not supported on this platform
+[2023-10-17 18:40:30.851] [93175] (audio_device_impl.cc:776): SetRecordingDevice(2)
+[2023-10-17 18:40:30.851] [93175] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-10-17 18:40:30.851] [93175] (audio_device_impl.cc:573): output: 0
+[2023-10-17 18:40:30.851] [93175] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-10-17 18:40:30.851] [93175] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-10-17 18:40:30.851] [93175] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-10-17 18:40:30.851] [93175] (audio_device_impl.cc:547): SetMicrophoneVolume(109)
+[2023-10-17 18:40:30.851] [93175] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-17 18:40:30.851] [93175] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-10-17 18:40:30.851] [93175] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-10-17 18:40:30.851] [93175] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-10-17 18:40:30.851] [93175] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-10-17 18:40:30.852] [93175] (audio_device_impl.cc:619): output: 1
+[2023-10-17 18:40:30.852] [93175] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-10-17 18:40:30.852] [93175] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-10-17 18:40:30.856] [93147] (discord.cpp:744): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2023-10-17 18:40:31.008] [93147] (discord.cpp:744): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2023-10-17 18:40:31.268] [93147] (discord.cpp:744): JS console: ["Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.\nArguments: \n[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 5/13/2022 10:00 -0800, _f: undefined, _strict: undefined, _locale: [object Object]\nError\n    at Function.createFromInputFallback (https://discord.com/assets/cc74d3737d867cde23d8.js:3144:330)\n    at Bn (https://discord.com/assets/cc74d3737d867cde23d8.js:3170:696)\n    at Wn (https://discord.com/assets/cc74d3737d867cde23d8.js:3173:356)\n    at Zn (https://discord.com/assets/cc74d3737d867cde23d8.js:3173:199)\n    at Yn (https://discord.com/assets/cc74d3737d867cde23d8.js:3172:886)\n    at Kn (https://discord.com/assets/cc74d3737d867cde23d8.js:3173:697)\n    at zn (https://discord.com/assets/cc74d3737d867cde23d8.js:3173:731)\n    at i (https://discord.com/assets/cc74d3737d867cde23d8.js:3140:961)\n    at 408481 (https://discord.com/assets/122a2aaecc8a1c614235.js:21:346)\n    at l (https://discord.com/assets/fb12f262a5d2adbeaa8c.js:1:154)\n    at 558820 (https://discord.com/assets/122a2aaecc8a1c614235.js:14:338)\n    at l (https://discord.com/assets/fb12f262a5d2adbeaa8c.js:1:154)\n    at 308739 (https://discord.com/assets/122a2aaecc8a1c614235.js:2:331)\n    at l (https://discord.com/assets/fb12f262a5d2adbeaa8c.js:1:154)\n    at 173242 (https://discord.com/assets/a92d0b10557712b664f2.js:135:232)\n    at l (https://discord.com/assets/fb12f262a5d2adbeaa8c.js:1:154)\n    at 397209 (https://discord.com/assets/cd342078dc4fe95f2003.js:36:749)\n    at Function.l (https://discord.com/assets/fb12f262a5d2adbeaa8c.js:1:154)"]
+[2023-10-17 18:40:31.338] [93147] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-17 18:40:32.180] [93147] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Socket is reconnecting because of starting new session"]
+[2023-10-17 18:40:32.181] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]",".connect() called, new state is WILL_RECONNECT"]
+[2023-10-17 18:40:32.181] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","Setting connection state to WILL_RECONNECT"]
+[2023-10-17 18:40:32.181] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","Setting connection state to CONNECTING"]
+[2023-10-17 18:40:32.181] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-17 18:40:32.182] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","newOrTakeoverWebSocket()"]
+[2023-10-17 18:40:32.182] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2023-10-17 18:40:32.182] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1 ms"]
+[2023-10-17 18:40:32.183] [93147] (discord.cpp:744): JS console: ["%c[ConnectionStore]","handleIdentify called","[object Object]"]
+[2023-10-17 18:40:32.183] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","Setting connection state to IDENTIFYING"]
+[2023-10-17 18:40:32.183] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[IDENTIFY]"]
+[2023-10-17 18:40:32.191] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[HELLO] via \ngateway-prd-us-east1-c-5zm3: 0, heartbeat interval: 41250, took 10 ms"]
+[2023-10-17 18:40:33.055] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[READY] took 874ms, as eafde78ead8f3965938cffdd3a7b6649 via \ngateway-prd-us-east1-c-5zm3: 285.305\n|  id_created: 0.965\n|  session_lookup_time: 6.526\n|  session_lookup_finished: 0.017\n|  discord-sessions-prd-2-197: 265.282\n|  |  start_session: 221.781\n|  |  |  discord-api-78b5fc47f9-2fznr: 203.903\n|  |  |  |  get_user: 16.865\n|  |  |  |  get_guilds: 27.36\n|  |  |  |  user_settings_proto: 0.23\n|  |  |  |  relationships: 124.742\n|  |  |  |  friend_suggestion: 0.051\n|  |  |  |  connections: 0.396\n|  |  |  |  serialized_read_states: 0.005\n|  |  |  |  pending_payments: 0.001\n|  |  |  |  send_scheduled_deletion_message: 0.001\n|  |  |  |  sanitize_premium_perks: 0.001\n|  |  |  |  guild_join_requests: 0\n|  |  |  |  broadcaster_user_ids: 0.001\n|  |  |  |  user_guild_settings: 0.001\n|  |  |  |  serialized_private_channels: 0.001\n|  |  |  |  user_segments: 0\n|  |  |  |  game_invites: 0.001\n|  |  |  |  experiments: 12.338\n|  |  |  |  affine_user_ids: 0.01\n|  |  |  |  required_action: 0.001\n|  |  |  |  authorized_ip_coro: 0.001\n|  |  starting_guild_connect: 0.162\n|  |  presence_started: 0.354\n|  |  guilds_started: 1.524\n|  |  guilds_connect: 35.03\n|  |  presence_connect: 0.002\n|  |  connect_finished: 35.048\n|  |  build_ready: 2.782\n|  |  clean_ready: 0.002\n|  |  optimize_ready: 3.442\n|  |  split_ready: 0.184"]
+[2023-10-17 18:40:33.055] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","Setting connection state to SESSION_ESTABLISHED"]
+[2023-10-17 18:40:33.092] [93147] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_OPEN"]
+[2023-10-17 18:40:33.093] [93147] (discord.cpp:744): JS console: ["%c[AuthenticationStore]","handleConnectionOpen called","[object Object]"]
+[2023-10-17 18:40:33.094] [93147] (discord.cpp:744): JS console: ["%c[DatabaseManager]","removing database (user: 238805386658971660, database: undefined)"]
+[2023-10-17 18:40:33.094] [93147] (discord.cpp:744): JS console: ["%c[DatabaseManager]","added database (238805386658971660 → null)"]
+[2023-10-17 18:40:33.128] [93147] (discord.cpp:744): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2023-10-17 18:40:33.151] [93147] (discord.cpp:744): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-10-17 18:40:33.152] [93147] (discord.cpp:744): JS console: ["%c[Spotify]","Added account: goingpiano"]
+[2023-10-17 18:40:33.190] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 611627935958433832 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:40:33.197] [93147] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 126ms"]
+[2023-10-17 18:40:33.199] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","Updating resume url to wss://gateway-us-east1-c.discord.gg"]
+[2023-10-17 18:40:33.212] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 1030ms"]
+[2023-10-17 18:40:33.212] [93147] (discord.cpp:744): JS console: ["%c[GatewaySocket]","Setting connection state to SESSION_ESTABLISHED"]
+[2023-10-17 18:40:33.745] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 611627935958433832 isBefore:false isAfter:false"]
+[2023-10-17 18:40:35.017] [93147] (discord.cpp:744): JS console: ["%c[Flux]","Slow dispatch on GAMES_DATABASE_UPDATE: 725ms"]
+[2023-10-17 18:40:35.048] [93147] (discord.cpp:744): JS console: ["%c[Spotify]","Updated account access token: goingpiano"]
+[2023-10-17 18:40:35.587] [93147] (discord.cpp:744): JS console: ["%c[Spotify]","WS Connected"]
+[2023-10-17 18:40:35.826] [93147] (discord.cpp:744): JS console: ["%c[Spotify]","Devices updated for goingpiano:",""]
+[2023-10-17 18:40:35.888] [93175] (engine.cpp:747): Engine::SetClipBufferLength(0)
+[2023-10-17 18:40:35.956] [93147] (discord.cpp:744): JS console: ["%c[Spotify]","Profile updated for goingpiano: isPremium = true"]
+[2023-10-17 18:40:39.112] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1011871544303161355 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:40:39.394] [93147] (discord.cpp:744): JS console: ["Initializing krisp module"]
+[2023-10-17 18:40:39.756] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1011871544303161355 isBefore:false isAfter:false"]
+[2023-10-17 18:40:40.037] [93147] (discord.cpp:744): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2023-10-17 18:40:40.039] [93147] (discord.cpp:744): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2023-10-17 18:40:43.154] [93147] (discord.cpp:744): JS console: ["%c[ReadStateStore]","Deleting ReadState","747182497162330172","0","[object Object]"]
+[2023-10-17 18:40:45.858] [93147] (discord.cpp:744): JS console: ["%c[FetchBlockedDomain]","Fetching blocked domain list"]
+[2023-10-17 18:40:45.899] [93147] (discord.cpp:744): JS console: ["%c[FetchBlockedDomain]","Server revision: 186, Client revision: 176"]
+[2023-10-17 18:40:45.994] [93147] (discord.cpp:744): JS console: ["%c[FetchBlockedDomain]","Retrieved delta, domains added: 516, domains removed: 0"]
+[2023-10-17 18:40:46.023] [93147] (discord.cpp:744): JS console: ["%c[FetchBlockedDomain]","Blocked domains list length: 28396 before update"]
+[2023-10-17 18:40:46.024] [93147] (discord.cpp:744): JS console: ["%c[FetchBlockedDomain]","Delta applied successfully"]
+[2023-10-17 18:40:46.024] [93147] (discord.cpp:744): JS console: ["%c[FetchBlockedDomain]","Blocked domains list length: 28912 after update"]
+[2023-10-17 18:40:53.826] [93147] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-17 18:40:55.639] [93147] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.FrecencyUserSettings]","Loading proto"]
+[2023-10-17 18:40:58.892] [93147] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-17 18:41:00.399] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 775926450444304387 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:41:00.485] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/775924498611830785/775926450444304387"]
+[2023-10-17 18:41:01.108] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 775926450444304387 isBefore:false isAfter:false"]
+[2023-10-17 18:41:02.419] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/611627935958433832"]
+[2023-10-17 18:41:03.703] [93465] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-east
+[2023-10-17 18:41:03.703] [93465] (region_latency_tester.cpp:72): Sending 5 latency test pings to region newark
+[2023-10-17 18:41:03.703] [93465] (region_latency_tester.cpp:72): Sending 5 latency test pings to region atlanta
+[2023-10-17 18:41:03.703] [93465] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2023-10-17 18:41:03.703] [93465] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2023-10-17 18:41:03.803] [93465] (region_latency_tester.cpp:271): Average RTT for region us-east is 39.5
+[2023-10-17 18:41:03.803] [93465] (region_latency_tester.cpp:271): Average RTT for region newark is 39
+[2023-10-17 18:41:03.803] [93465] (region_latency_tester.cpp:271): Average RTT for region atlanta is 54.25
+[2023-10-17 18:41:03.803] [93465] (region_latency_tester.cpp:271): Average RTT for region us-central is 99
+[2023-10-17 18:41:03.803] [93465] (region_latency_tester.cpp:271): Average RTT for region us-south is 100
+[2023-10-17 18:41:03.803] [93147] (discord.cpp:744): JS console: ["%c[RTCLatencyTestManager]","RTC region latency test completed: ","newark,us-east,atlanta,us-central,us-south"]
+[2023-10-17 18:41:29.728] [93147] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-17 18:41:33.066] [93147] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-17 18:41:45.070] [93147] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-17 18:42:27.014] [93147] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-17 18:42:58.303] [93147] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-17 18:43:01.568] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 550481453050232834 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:43:01.633] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/550481453050232834"]
+[2023-10-17 18:43:01.792] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 550481453050232834 isBefore:false isAfter:false"]
+[2023-10-17 18:43:08.222] [93147] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-17 18:43:10.646] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/550481453050232834"]
+[2023-10-17 18:43:18.185] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 550481453050232834 between undefined and undefined. jump={\"messageId\":\"1163970305044262994\",\"flash\":true,\"returnMessageId\":\"1163970379019194378\"}"]
+[2023-10-17 18:43:47.789] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1145436156171915437 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:43:47.803] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/1145436156171915437"]
+[2023-10-17 18:43:48.055] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1145436156171915437 isBefore:false isAfter:false"]
+[2023-10-17 18:43:49.662] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1145436156171915437 between 1163862409895755897 and undefined. jump=undefined"]
+[2023-10-17 18:43:49.887] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1145436156171915437 isBefore:true isAfter:false"]
+[2023-10-17 18:48:08.738] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/775924498611830785/775926450444304387"]
+[2023-10-17 18:48:23.175] [93147] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Updating userContent with delay 0"]
+[2023-10-17 18:48:23.217] [93147] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Scheduling save from markDirty"]
+[2023-10-17 18:48:23.255] [93147] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Persisting proto"]
+[2023-10-17 18:48:27.772] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:34.324] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:35.346] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:35.365] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:36.050] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:38.745] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:38.766] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:39.395] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:40.924] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:40.953] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:42.042] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:42.330] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:48:42.351] [93147] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-17 18:50:42.714] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 917319102165573686 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:50:42.813] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/917319102165573683/917319102165573686"]
+[2023-10-17 18:50:43.056] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 917319102165573686 isBefore:false isAfter:false"]
+[2023-10-17 18:50:46.655] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 878197400966135820 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:50:46.731] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/878197400307642379/878197400966135820"]
+[2023-10-17 18:50:46.952] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 878197400966135820 isBefore:false isAfter:false"]
+[2023-10-17 18:50:48.531] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 961105387019456544 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:50:48.673] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/857035276538609674/961105387019456544"]
+[2023-10-17 18:50:48.990] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 961105387019456544 isBefore:false isAfter:false"]
+[2023-10-17 18:50:49.991] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 733801937161420852 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:50:50.074] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/584323711243517952/733801937161420852"]
+[2023-10-17 18:50:50.324] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 733801937161420852 isBefore:false isAfter:false"]
+[2023-10-17 18:50:50.931] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1010197974044901428 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:50:51.047] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/714871997032693831/1010197974044901428"]
+[2023-10-17 18:50:51.262] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1010197974044901428 isBefore:false isAfter:false"]
+[2023-10-17 18:50:52.988] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1143731659578032210 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:50:53.071] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/714871997032693831/1143731659578032210"]
+[2023-10-17 18:50:53.163] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1143731659578032210 isBefore:false isAfter:false"]
+[2023-10-17 18:50:55.758] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 714871997481615432 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:50:55.837] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/714871997032693831/714871997481615432"]
+[2023-10-17 18:50:55.957] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 714871997481615432 isBefore:false isAfter:false"]
+[2023-10-17 18:51:05.357] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/775924498611830785/775926450444304387"]
+[2023-10-17 18:51:07.718] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 869345074230747140 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-17 18:51:07.836] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/869345074230747137/869345074230747140"]
+[2023-10-17 18:51:08.072] [93147] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 869345074230747140 isBefore:false isAfter:false"]
+[2023-10-17 18:51:08.719] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/714871997032693831/714871997481615432"]
+[2023-10-17 18:51:10.123] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/1145436156171915437"]
+[2023-10-17 18:51:12.465] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/550481453050232834"]
+[2023-10-17 18:51:44.483] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/611627935958433832"]
+[2023-10-17 18:56:27.030] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/550481453050232834"]
+[2023-10-17 18:56:29.606] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/611627935958433832"]
+[2023-10-17 18:56:31.673] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/550481453050232834"]
+[2023-10-17 18:57:01.099] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/714871997032693831/714871997481615432"]
+[2023-10-17 18:57:02.290] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/775924498611830785/775926450444304387"]
+[2023-10-17 18:57:05.000] [93147] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/550481453050232832/550481453050232834"]

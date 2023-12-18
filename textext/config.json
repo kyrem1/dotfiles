@@ -1,0 +1,9 @@
+{
+  "inkscape-executable": "/usr/bin/inkscape",
+  "preamble": "/home/kyrem1/.config/inkscape/extensions/textext/default_packages.tex",
+  "scale": 3.0,
+  "previous_tex_command": "pdflatex",
+  "gui": {
+    "confirm_close": true
+  }
+}

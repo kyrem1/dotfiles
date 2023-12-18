@@ -1,0 +1,18 @@
+# Delimiters
+global !p
+def notmath():
+	return vim.eval('vimtex#syntax#in_mathzone()') != '1'
+endglobal
+
+# set priority 2 to override snippets in all.snippets
+priority 2
+# not math so that " can be used in math to access ',
+# since ' is used to trigger superscript.
+context "notmath()"
+snippet "(^|[^a-zA-Z0-9])``" "LaTeX quotation marks" rA
+`!p snip.rv = match.group(1)`\`\`${1:${VISUAL:}}''$0
+endsnippet
+
+snippet "(^|[^\w\$\)\}])'"  "single quotation marks" rA
+`!p snip.rv = match.group(1)`'${1:${VISUAL:}}'$0
+endsnippet

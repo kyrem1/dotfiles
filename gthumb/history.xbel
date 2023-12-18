@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/kyrem1/Downloads" added="2023-12-04T03:07:56.584010Z" modified="2023-12-04T03:07:56.584016Z" visited="2023-12-04T03:07:56.584011Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-12-04T03:07:56.584013Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyrem1/Development/Textbooks" added="2023-12-04T03:07:56.584018Z" modified="2023-12-04T03:07:56.584022Z" visited="2023-12-04T03:07:56.584018Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-12-04T03:07:56.584021Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyrem1/Development/jamesharbour.xyz/content" added="2023-12-04T03:07:56.584024Z" modified="2023-12-04T03:07:56.584028Z" visited="2023-12-04T03:07:56.584024Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-12-04T03:07:56.584026Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
