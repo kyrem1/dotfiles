@@ -29,6 +29,9 @@ set background=dark
 autocmd BufNew,BufRead *.s set ft=nasm  " set .s to NASM file
 """"""""""KEYMAPS""""""""""
 
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
 " Set leader key to ,
 let mapleader = ','
 
@@ -41,6 +44,9 @@ nmap <leader>t :!alacritty -o font.size=8 -e bash -c "cd %:p:h;bash" &<CR> | :re
 " True-zen
 nnoremap <leader>z :set background=dark<CR> <bar> :ZenMode<CR>
 
+" Giles-Castel Inkscape figures
+inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
 
 " Copy to clipboard
 vnoremap  <leader>y  "+y
@@ -66,6 +72,7 @@ nnoremap <silent> <leader>gg :LazyGit<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
 
+let g:polyglot_disabled = ['tex']
 """"""""""PLUGINS""""""""""
 
 " Plugins
@@ -81,6 +88,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'zhou13/vim-easyescape'
 Plug 'ethanholz/nvim-lastplace'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Appearance
 Plug 'folke/zen-mode.nvim'
@@ -91,8 +99,24 @@ Plug 'shirk/vim-gas'
 " Latex-Related
 Plug 'SirVer/ultisnips'
 Plug 'lervag/vimtex'
-
-
+"let g:vimtex_compiler_latexmk = {'build_dir': 'tmp'}
+let g:vimtex_view_enabled=1
+let g:vimtex_view_automatic=0
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_compiler_latexmk = {
+        \ 'build_dir' : 'tmp',
+        \ 'callback' : 1,
+        \ 'continuous' : 1,
+        \ 'executable' : 'latexmk',
+        \ 'hooks' : [],
+        \ 'options' : [
+        \   '-shell-escape',
+        \   '-verbose',
+        \   '-file-line-error',
+        \   '-synctex=1',
+        \   '-interaction=nonstopmode',
+        \ ],
+        \}
 Plug 'kyazdani42/nvim-web-devicons' "always load last
 call plug#end()
 

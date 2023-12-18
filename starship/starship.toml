@@ -1,11 +1,38 @@
+# SOURCES
+# https://starship.rs/config
+# https://starship.rs/presets/nerd-font.html#configuration
+
+# DEBUG via:
+# starship explain
+# STARSHIP_LOG=trace
+
+# newline between commands
+add_newline = true
+
 format = """
-$directory\
+$os\
+$username\
+$hostname\
+:$directory\
 $git_branch\
 $git_state\
+$python\
 $linebreak
 $character"""
 
 command_timeout = 500
+
+[username]
+style_user = "blue bold"
+style_root = "red bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[@$hostname](blue bold)"
+disabled = false
 
 [fill]
 symbol = " "
@@ -16,10 +43,15 @@ read_only = " "
 truncation_length = 4
 truncate_to_repo = false
 
+#[character]
+#success_symbol = "[>](bold green)"
+#error_symbol = "[>](bold green)"
+#vicmd_symbol = "[<](bold white)"
+
+# Replace the "❯"
 [character]
-success_symbol = "[>](bold green)"
-error_symbol = "[>](bold green)"
-vicmd_symbol = "[<](bold white)"
+success_symbol = "[λ](green)"
+error_symbol = "[λ](red)"
 
 [git_branch]
 symbol = " "
@@ -58,3 +90,51 @@ disabled = true
 style = "bold white"
 format = "[$time]($style)"
 
+# Show python version starting with venv
+[python]
+python_binary = ["./venv/bin/python", "python3", "python", "python2"]
+
+[os]
+format = '[$symbol](bold white)'
+disabled = false
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "

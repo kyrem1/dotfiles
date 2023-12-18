@@ -24,11 +24,15 @@ bindsym $mod+Return exec --no-startup-id alacritty -o font.size=8
 # Window kill command
 bindsym $mod+Shift+q kill
 
-# start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show run
-
 # Picom
 exec_always --no-startup-id picom &
+
+
+######################################################
+#### Application Shortcuts ####
+
+# Program Launcher
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Ranger
 bindsym $mod+t exec alacritty -o font.size=8 -e 'ranger'
@@ -36,6 +40,8 @@ bindsym $mod+Shift+t exec /home/kyrem1/Applications/todofi.sh
 
 # ncmpcpp
 bindsym $mod+m exec alacritty -e 'ncmpcpp'
+
+######################################################
 
 # flameshot (screenshots)
 # bindsym Print       exec flameshot full
@@ -48,11 +54,12 @@ bindsym --release Print exec gnome-screenshot -i
 bindsym --release $mod+Print exec gnome-screenshot -a
 
 ###### Startup execs ######
-exec --no-startup-id spotifyd
+#exec --no-startup-id spotifyd
 exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/kyrem1/.config/i3/layouts/homeScreen.json; exec alacritty --class spotifyHomeScreen -o font.size=8 -e ncmpcpp; exec alacritty --class neofetchHomeScreen -o font.size=8 -e neofetch; exec alacritty --class clockHomeScreen -o font.size=8 -e peaclock'"
 exec_always --no-startup-id unclutter &
 
-###########################
+######################################################
+#### Navigation Keys ####
 
 # change focus
 bindsym $mod+h focus left
@@ -262,7 +269,8 @@ client.background #1f1f1f
 
 # Gaps
 gaps inner 10
-gaps outer -4
+# below previously -4. Changed to 0 to fix polybar workspaces
+gaps outer 0 
 gaps top 16
 
 #rmart_gaps on

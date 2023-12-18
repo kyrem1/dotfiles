@@ -71,6 +71,12 @@ snippet "([\w]|[\}\)\]\|'])CC" "Automatic complement superscript" rA
 `!p snip.rv = match.group(1)`^{\complement}
 endsnippet
 
+context "math()"
+snippet "([\w]|[\}\)\]\|'])\"\"" "Automatic prime" rA
+`!p snip.rv = match.group(1)`^{\prime}
+endsnippet
+
+
 # ----------------------------------------- #
 # END SUPERSCRIPTS AND SUBSCRIPTS
 
@@ -122,8 +128,9 @@ snippet "([\W_\\])bb" "\bar" rA
 `!p snip.rv = match.group(1)`\cls{${1:${VISUAL:}}}$0
 endsnippet
 
-snippet "([\W_])tn" "\tensor{}" rA
-`!p snip.rv = match.group(1)`\tensor{${1:${VISUAL:}}}$0
+context "math()"
+snippet "([\W_])tn" "\otimes" rA
+`!p snip.rv = match.group(1)`\otimes $0
 endsnippet
 
 context "math()"

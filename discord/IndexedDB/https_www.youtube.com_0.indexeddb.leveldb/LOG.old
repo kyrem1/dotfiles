@@ -1,3 +1,4 @@
-2022/10/12-01:51:31.361 3fa5a Reusing MANIFEST /home/kyrem1/.config/discord/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/10/12-01:51:31.361 3fa5a Recovering log #4
-2022/10/12-01:51:31.361 3fa5a Reusing old log /home/kyrem1/.config/discord/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2023/06/03-16:09:20.023 ffa Reusing MANIFEST /home/kyrem1/.config/discord/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/03-16:09:20.023 ffa Recovering log #7
+2023/06/03-16:09:20.023 ffa Reusing old log /home/kyrem1/.config/discord/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000007.log 
+2023/06/03-16:09:20.023 ffa Delete type=2 #5
