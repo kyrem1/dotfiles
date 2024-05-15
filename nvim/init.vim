@@ -22,11 +22,25 @@ filetype plugin on  " enable filetype plugins
 filetype indent on  " load file-specific indentations
 syntax on			" enable syntax highlighting
 set breakindent
+set termguicolors
 
-colorscheme default " Global Colorscheme
+colorscheme default
 set background=dark
 
 autocmd BufNew,BufRead *.s set ft=nasm  " set .s to NASM file
+
+
+" Code Folding
+" This will enable code folding.
+" Use the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" Closes preview window for Omnicomplete after selection
+autocmd CompleteDone * pclose
+
 """"""""""KEYMAPS""""""""""
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
@@ -39,14 +53,14 @@ let mapleader = ','
 noremap <leader>b :bnext<CR>                
 
 " Open terminal instance in working directory
-nmap <leader>t :!alacritty -o font.size=8 -e bash -c "cd %:p:h;bash" &<CR> | :redraw!
+nmap <leader>t :!alacritty -o font.size=7 -e bash -c "cd %:p:h;bash" &<CR> | :redraw!
 
 " True-zen
 nnoremap <leader>z :set background=dark<CR> <bar> :ZenMode<CR>
 
 " Giles-Castel Inkscape figures
-inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
+"inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+"nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
 
 " Copy to clipboard
 vnoremap  <leader>y  "+y
@@ -64,7 +78,7 @@ let g:UltiSnipsSnippetsDirectories = [$HOME.'/.config/nvim/UltiSnips']
 " LazyGit Config
 let g:lazygit_floating_window_winblend = 0 " transparency of floating window
 let g:lazygit_floating_window_scaling_factor = 0.9 " scaling factor for floating window
-let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
+let g:lazygit_floating_window_border_chars= ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
 let g:lazygit_floating_window_use_plenary = 0 " use plenary.nvim to manage floating window if available let g:lazygit_use_neovim_remote = 1 " fallback to 0 if neovim-remote is not installed 
 nnoremap <silent> <leader>gg :LazyGit<CR>
 
@@ -85,6 +99,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'arcticicestudio/nord-vim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'sheerun/vim-polyglot'
+let g:polyglot_disabled = ['tex']
 Plug 'kdheepak/lazygit.nvim'
 Plug 'zhou13/vim-easyescape'
 Plug 'ethanholz/nvim-lastplace'
@@ -93,18 +108,21 @@ Plug 'christoomey/vim-tmux-navigator'
 " Appearance
 Plug 'folke/zen-mode.nvim'
 
+" Colors
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " Syntax-Related
 Plug 'shirk/vim-gas'
+Plug 'elzr/vim-json'
 
 " Latex-Related
 Plug 'SirVer/ultisnips'
 Plug 'lervag/vimtex'
-"let g:vimtex_compiler_latexmk = {'build_dir': 'tmp'}
 let g:vimtex_view_enabled=1
 let g:vimtex_view_automatic=0
 let g:vimtex_view_method = 'zathura'
 let g:vimtex_compiler_latexmk = {
-        \ 'build_dir' : 'tmp',
+        \ 'aux_dir' : 'tmp/.aux',
+        \ 'out_dir' : 'tmp',
         \ 'callback' : 1,
         \ 'continuous' : 1,
         \ 'executable' : 'latexmk',

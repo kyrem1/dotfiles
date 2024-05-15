@@ -3,31 +3,41 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/kyrem1/Downloads" added="2023-12-04T03:07:56.584010Z" modified="2023-12-04T03:07:56.584016Z" visited="2023-12-04T03:07:56.584011Z">
+  <bookmark href="file:///home/kyrem1/Downloads" added="2024-05-04T19:37:12.084408Z" modified="2024-05-04T19:37:12.084417Z" visited="2024-05-04T19:37:12.084410Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <bookmark:applications>
-          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-12-04T03:07:56.584013Z" count="1"/>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-05-04T19:37:12.084414Z" count="1"/>
         </bookmark:applications>
         <bookmark:private/>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyrem1/Development/Textbooks" added="2023-12-04T03:07:56.584018Z" modified="2023-12-04T03:07:56.584022Z" visited="2023-12-04T03:07:56.584018Z">
+  <bookmark href="file:///home/kyrem1/Downloads/phots" added="2024-05-04T19:37:12.084421Z" modified="2024-05-04T19:37:12.084427Z" visited="2024-05-04T19:37:12.084421Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <bookmark:applications>
-          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-12-04T03:07:56.584021Z" count="1"/>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-05-04T19:37:12.084424Z" count="1"/>
         </bookmark:applications>
         <bookmark:private/>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyrem1/Development/jamesharbour.xyz/content" added="2023-12-04T03:07:56.584024Z" modified="2023-12-04T03:07:56.584028Z" visited="2023-12-04T03:07:56.584024Z">
+  <bookmark href="file:///home/kyrem1/Development/Textbooks" added="2024-05-04T19:37:12.084432Z" modified="2024-05-04T19:37:12.084438Z" visited="2024-05-04T19:37:12.084432Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <bookmark:applications>
-          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-12-04T03:07:56.584026Z" count="1"/>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-05-04T19:37:12.084435Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyrem1/Development/jamesharbour.xyz/content" added="2024-05-04T19:37:12.084441Z" modified="2024-05-04T19:37:12.084447Z" visited="2024-05-04T19:37:12.084441Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-05-04T19:37:12.084444Z" count="1"/>
         </bookmark:applications>
         <bookmark:private/>
       </metadata>

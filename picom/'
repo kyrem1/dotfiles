@@ -1,0 +1,29 @@
+#################################
+#          Picom Config         #
+#################################
+
+# Backend
+backend = "glx"; # Use the GLX backend for better performance and compatibility
+glx-no-stencil = true; # Improves performance with some drivers
+glx-copy-from-front = false;
+glx-no-rebind-pixmap = true; # May improve performance with some drivers
+
+
+# Opacity
+opacity-rule = [
+	"98:class_g = 'Alacritty' && focused",,
+	"85:class_g = 'Alacritty' && !focused",,
+
+];
+
+corner-radius = 10;
+
+
+# Fading TODO Make this be off when using NX remote, since looks bad then
+fading = true; # Use fading effects on windows
+fade-delta = 4; # The time between steps in a fade in milliseconds.
+#fade-in-step = 0.03; # Opacity change between steps while fading in.
+#fade-out-step = 0.03; # Opacity change between steps while fading out.
+fade-exclude = [ ]; # Specify conditions to exclude windows from fading.
+no-fading-openclose = false;
+

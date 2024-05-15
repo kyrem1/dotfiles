@@ -1,0 +1,77 @@
+// vim:ts=4:sw=4:et
+{
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 600,
+       "width": 935,
+       "x": 945,
+       "y": 80
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "user_on",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "ncmpcpp 0.9.2",
+            "percent": 1,
+            "swallows": [
+               {
+                 "class": "ncmpcpp_home"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 600,
+       "width": 800,
+       "x": 93,
+       "y": 79
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "user_on",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "kyrem1@james-arch:~",
+            "percent": 1,
+            "swallows": [
+               {
+                   "class": "neofetch_home"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

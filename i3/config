@@ -18,7 +18,7 @@ floating_modifier $mod
 
 # Terminal
 set $TERMINAL alacritty
-bindsym $mod+Return exec --no-startup-id alacritty -o font.size=8
+bindsym $mod+Return exec --no-startup-id alacritty -o font.size=7
 
 
 # Window kill command
@@ -27,6 +27,8 @@ bindsym $mod+Shift+q kill
 # Picom
 exec_always --no-startup-id picom &
 
+# Typing-hold delay
+exec xset r rate 250 30
 
 ######################################################
 #### Application Shortcuts ####
@@ -35,11 +37,14 @@ exec_always --no-startup-id picom &
 bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Ranger
-bindsym $mod+t exec alacritty -o font.size=8 -e 'ranger'
+bindsym $mod+t exec alacritty -o font.size=7 -e 'ranger'
 bindsym $mod+Shift+t exec /home/kyrem1/Applications/todofi.sh
 
 # ncmpcpp
-bindsym $mod+m exec alacritty -e 'ncmpcpp'
+bindsym $mod+m exec alacritty -o font.size=7 -e 'ncmpcpp'
+
+# Firefox
+bindsym $mod+w exec firefox
 
 ######################################################
 
@@ -55,8 +60,11 @@ bindsym --release $mod+Print exec gnome-screenshot -a
 
 ###### Startup execs ######
 #exec --no-startup-id spotifyd
-exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/kyrem1/.config/i3/layouts/homeScreen.json; exec alacritty --class spotifyHomeScreen -o font.size=8 -e ncmpcpp; exec alacritty --class neofetchHomeScreen -o font.size=8 -e neofetch; exec alacritty --class clockHomeScreen -o font.size=8 -e peaclock'"
-exec_always --no-startup-id unclutter &
+#exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/kyrem1/.config/i3/layouts/homeScreen.json; exec alacritty --class spotifyHomeScreen -o font.size=8 -e ncmpcpp; exec alacritty --class neofetchHomeScreen -o font.size=8 -e neofetch; exec alacritty --class clockHomeScreen -o font.size=8 -e peaclock'"
+#exec_always --no-startup-id unclutter &
+
+exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/kyrem1/.config/i3/layouts/newlayout.json; exec --no-startup-id alacritty --class neofetch_home -o font.size=8 --hold -e neofetch; exec --no-startup-id alacritty --class ncmpcpp_home -o font.size=5 -e ncmpcpp'"
+
 
 ######################################################
 #### Navigation Keys ####
@@ -97,8 +105,8 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+#bindsym $mod+s layout stacking
+bindsym $mod+s layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -195,6 +203,8 @@ for_window [class="Xfburn"] floating enable
 for_window [class="firefox"] border none
 for_window [class="discord"] broder none
 
+for_window [class="Conky"] move to workspace $ws1, sticky disable
+
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -256,7 +266,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/polybar_launch.sh
 
 # Theme colors
 client.focused #c6c6c6 #1f1f1f #c6c6c6 #8abeb7 #8abeb7
@@ -313,7 +323,8 @@ mode "$mode_gaps_outer" {
 }
 
 # set power-manager and volume control
-exec --no-startup-id mate-power-manager
+#exec --no-startup-id mate-power-manager
+#exec mate-power-manager
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2db- unmute
@@ -326,3 +337,7 @@ bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
 # control keyboard backlight levels
 bindsym $mod+plus exec brightnessctl --device='tpacpi::kbd_backlight' set +1
 bindsym $mod+Shift+plus exec brightnessctl --device='tpacpi::kbd_backlight' set 1-
+
+bindsym XF86MonBrightnessUp exec brightnessctl --device=intel_backlight set +500
+bindsym XF86MonBrightnessDown exec brightnessctl --device=intel_backlight set 500-
+

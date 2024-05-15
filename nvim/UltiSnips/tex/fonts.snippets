@@ -8,6 +8,11 @@ snippet "(^|[^a-zA-Z])tbb" "\textbf{} " rA
 `!p snip.rv = match.group(1)`\textbf{${1:${VISUAL:}}}$0
 endsnippet
 
+
+snippet "(^|[^a-zA-Z])mrr" "\mathrm{} " rA
+`!p snip.rv = match.group(1)`\mathrm{${1:${VISUAL:}}}$0
+endsnippet
+
 snippet "(^|[^a-zA-Z])mcc" "\mathcal" rA
 `!p snip.rv = match.group(1)`\mathcal{${1:${VISUAL:}}}$0
 endsnippet
@@ -15,4 +20,9 @@ endsnippet
 snippet "(^|[^a-zA-Z])mss" "\mathscr" rA
 `!p snip.rv = match.group(1)`\mathscr{${1:${VISUAL:}}}$0
 endsnippet
+
+snippet "(^|[^a-zA-Z])mtt" "\text" rA
+`!p snip.rv = match.group(1)`\text{${1:${VISUAL:}}}$0
+endsnippet
+
 

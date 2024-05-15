@@ -1,18 +1,42 @@
 " Local colorscheme
 colorscheme nord
 set background=dark
+
+" VIMTEX BINDS --------------------------------------------------------- {{{
+"
 let maplocalleader = ','
-
-
 
 " Compilation & update 
 noremap <leader>r <Cmd>update<CR><Cmd>VimtexCompileSS<CR>
 
+" }}}
 
+
+" GENERAL CONFIG --------------------------------------------------------- {{{
+"
+" no aligning & in align/aling* envs.
+let g:vimtex_indent_on_ampersands = 0
+
+
+" Turn off automatic indenting in enumerated environments
+"let g:tex_indent_items=0
+
+
+"""----- Table of Contents ------"""
+noremap <C-t> <Cmd>VimtexTocOpen<CR>
+"let layerlist = ['content', 'todo', 'include']
+"let g:vimtex_toc_config = {
+"    \ 'layers': layerlist }
+ 
+
+" }}}
+
+
+" COMPILATION OPTIONS --------------------------------------------------------- {{{
+"
 " latexmk options
-let g:vimtex_compiler_method = 'latexmk'
+"let g:vimtex_compiler_method = 'latexmk'
 "let g:vimtex_latexmk_background = 1
-
 
 " Suppress warnings for QuickFix
 let g:vimtex_quickfix_open_on_warning = 0
@@ -25,8 +49,11 @@ let g:vimtex_quickfix_ignore_filters = [
       \ 'Package hyperref Warning: Token not allowed in a PDF string',
       \]
 
+" }}}
 
-" Zathura reader options
+
+" VIEWER CONFIG --------------------------------------------------------- {{{
+"
 let g:vimtex_view_enabled=1
 let g:vimtex_view_automatic=0
 let g:vimtex_view_method = 'zathura'
@@ -36,16 +63,21 @@ let g:tex_flavor = "latex"
 " Open Viewer
 nmap <leader>v <plug>(vimtex-view)
 
-" no aligning & in align/aling* envs.
-let g:vimtex_indent_on_ampersands = 0
 
 
-" Turn off automatic indenting in enumerated environments
-"let g:tex_indent_items=0
+" }}}
+
+
+" COMPLETION CONFIG --------------------------------------------------------- {{{
+"
+" }}}
+
+
+" SECTION --------------------------------------------------------- {{{
 "
 
-noremap <C-t> <Cmd>VimtexTocOpen<CR>
-"let layerlist = ['content', 'todo', 'include']
-"let g:vimtex_toc_config = {
-"    \ 'layers': layerlist }
-                       
+
+" }}}
+
+
+                    

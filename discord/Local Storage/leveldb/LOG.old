@@ -1,5 +1,0 @@
-2023/11/26-21:27:42.672 124f9 Reusing MANIFEST /home/kyrem1/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2023/11/26-21:27:42.674 124f9 Recovering log #960
-2023/11/26-21:27:42.699 124f9 Level-0 table #964: started
-2023/11/26-21:27:42.727 124f9 Level-0 table #964: 2071592 bytes OK
-2023/11/26-21:27:42.731 124f9 Delete type=0 #960

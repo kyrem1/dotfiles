@@ -1,13 +1,21 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/kyrem1/.config
-- /home/kyrem1/Documents/james2022cv
+- /home/kyrem1/Finance/projects/forex
 - /home/kyrem1/Development/jamesharbour.xyz
-- /home/kyrem1/Mathematics/Notes/REU/Fractional Sobolev Asymptotics Paper
-- /home/kyrem1/Mathematics/Research/defRigProject
-- /home/kyrem1/Mathematics/mathematicsFall2022
+- /home/kyrem1/Mathematics
+- /home/kyrem1/texmf/tex/latex
+- /home/kyrem1/Writing
+- /home/kyrem1/Mathematics/Research/Current Projects/defRigProject
+- /home/kyrem1/Documents/james2022cv
 startuppopupversion: 5
+lastversion: 0.41.0
 customcommandshistory:
 - q
 hidecommandlog: false
 ignorewhitespaceindiffview: false
+diffcontextsize: 3
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always
